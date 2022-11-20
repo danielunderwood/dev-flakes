@@ -1,5 +1,9 @@
 {
   inputs = {
+    # You'll want this to correspond to the version of the nvidia driver you're
+    # using. If you don't, you can get errors like
+    # cudamalloc failed with error forward compatibility was attempted on non supported HW
+    # If you're on NixOS, just point this to the channel you're using
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.05";
     utils.url = "github:numtide/flake-utils";
   };
